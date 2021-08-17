@@ -40,19 +40,3 @@ List Members and assigned tasks
 
 Edit status to task
  - Alle oppgavene er automatisk satt med en default to do og her kan du endre statusen på oppgaven
-
-# Egenevaluering
-Vi har alltid jobbet sammen over Discord og forsøkt å push koden til hverandre så ofte som mulig. Det var utfordrende, så vi valgte ofte at èn holdt på koden, mens vi alle så på og diskuterte i fellesskap.  Så pushet vi nå vi visste at vi hadde en klar plan videre eller om en sto fast. 
-
-Vi var usikre i startet og vi visste ikke hvor vi skulle starte. Det var mye å holde kontroll på. Men for hver ting vi implementerte fikk vi litt mer forståelse for koden og hvordan alt henger sammen. Vi har lært at koden endres seg underveis mens man bygger. Og at man kan bruke lang tid på å lete etter små feil som f.eks. skrive feil, og at det er viktig med pauser.
-
-Pause ble etterhvert spesielt viktig da vi ofte tok en time eller to pause for at en av oss kom tilbake med en løsning på et problem vi hadde støtt på. 
-
-# Ting vi ønsket å gjøre annerledes 
-Vi skulle gjerne hatt med implementasjon av cookies for det hadde vi lyst til å lære oss. Vi ønsket også å få til favicon og ha bedre testdekning. 
-Samt skulle vi ønsket av vi fikk til å tildele en person flere oppgaver med dagens løsning fungerer ikke å vi forstår at vi måtte hatt en ekstra tabell for å få dette inn, men vi føler at måten vi har løst på fremdeles har vært lur. 
-
-# Designsbeskrivelse
-
-![](docs/StructurProjectMember.png)
-
