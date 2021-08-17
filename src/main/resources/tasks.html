@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="tasks"></div>
+<a href="index.html">Return to front page</a>
+</body>
+<script>
+    fetch("/tasks").then(response => response.text()).then(html => {
+        document.getElementById("tasks").innerHTML = html;
+    });
+</script>
+</html>

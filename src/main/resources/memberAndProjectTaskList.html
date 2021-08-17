@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project member list with task and status | KristianiaProject</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="outputTask"></div>
+<form>
+    <p>Task: <select name="taskId" id="taskId"></select></p>
+    <button>Submit</button>
+</form>
+<div>
+    <a href="index.html">Return to front page</a>
+</div>
+</body>
+<script>
+    fetch("/taskOptions").then((response) => response.text()).then(html => {
+    document.getElementById("taskId").innerHTML = html;
+});
+
+    fetch("/projectMember"+ location.search).then((response) => response.text()).then(html => {
+        document.getElementById("outputTask").innerHTML = html;
+});
+</script>
+</html>

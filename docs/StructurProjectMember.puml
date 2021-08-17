@@ -1,0 +1,26 @@
+@startuml
+actor User
+participant WebBrowser
+
+
+box Java Server
+
+participant HttpServer
+participant ProjectMemberDao
+end box
+
+database PostgreSQL
+
+User -> WebBrowser: List projects member
+WebBrowser -> HttpServer: /index.html
+WebBrowser <-- HttpServer: <html>...>script>fetch()</html>
+WebBrowser -> HttpServer: /projectMember
+HttpServer --> ProjectMemberController: HttpMessage request
+ProjectMemberController -> ProjectMemberDao: list()
+ProjectMemberDao -> PostgreSQL: SELECT * FROM project_member
+ProjectMemberDao <- PostgreSQL: ResultatSet
+ProjectMemberController <-- ProjectMemberDao: list<ProjectMember>
+HttpServer <-- ProjectMemberController : [HttpMessage response]
+WebBrowser <-- HttpServer: <li>project member</li>
+User <- WebBrowser: List of project members
+@enduml

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Edit project task</h1>
+
+<form method="POST" action="/updateProject">
+    <p>Project member <select name="projectMemberId" id="projectMemberId"></select></p>
+    <p>Task: <select name="taskId" id="taskId"></select></p>
+    <button>Submit</button>
+</form>
+
+<div>
+    <a href="index.html">Return to front page</a>
+</div>
+
+</body>
+
+<script>
+    fetch("/projectMemberOptions").then((response) => response.text()).then(html => {
+        document.getElementById("projectMemberId").innerHTML = html;
+    });
+    fetch("/taskOptions").then((response) => response.text()).then(html => {
+        document.getElementById("taskId").innerHTML = html;
+    });
+</script>
+</html>
