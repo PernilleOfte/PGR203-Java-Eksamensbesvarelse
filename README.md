@@ -5,7 +5,7 @@ pgr203eksamen-UnstableCodebase created by GitHub Classroom
 
 Dette er vår Project Task manager som er en eksamensoppgave i PGR203 Avansert Java Høst 2020. 
 Oppgavene er laget av: Fredrik, Andreas og Pernille. 
-I Project Task Manager har du mulighet til å opprette et prosjektmedlem, en prosjektoppgave. Tildele oppgaver til et prosjektmedlem og sette status for oppgaven. Man har også mulighet til å endre status etter hvert som oppgaven er under behandling eller løst. 
+I Project Task Manager har du mulighet til å opprette et prosjektmedlem, en prosjektoppgave. Tildele oppgaver til et prosjektmedlem og sette status for oppgaven. Man har også mulighet til å endre status etter hvert som oppgaven er under behandling eller løst. Oppgaven ble sensurert til en c.  
 
 # Programmet kjøres ved å:
 Bygg og test Executable jar-fil 
